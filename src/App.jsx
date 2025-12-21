@@ -23,6 +23,7 @@ import UseTransitionDemo from './useTransitionDemo'
 import Derived from './Derived'
 import ChildOne from "./ChildOne";
 import ChildTwo from "./ChildTwo";
+import Object from './Object'
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
         <ChildOne setHee={setHee}/>
         <ChildTwo hee={hee}/>
       </div>
+      <Object/>
     </>
   )
 }
