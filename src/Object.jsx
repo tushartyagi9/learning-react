@@ -11,7 +11,12 @@ function Object(){
 
     const handleData=(event)=>{
         setData({
-            ...data,
+            ...data,  
+            // we use this because if we dont, then by changing the key of the object the state 
+            // cannot understand 
+            //what has happened and it wwhether it has to updat ethe value or not
+            //so we have to change the reference
+            //this thing will create a new object copy and things will work good now
             name:event.target.value
         }
         )
