@@ -21,8 +21,12 @@ import Bootstrapp from './Bootstrapp'
 import UseFormStatuss from './useFormStatuss'
 import UseTransitionDemo from './useTransitionDemo'
 import Derived from './Derived'
+import ChildOne from "./ChildOne";
+import ChildTwo from "./ChildTwo";
+
 
 function App() {
+  const [hee,setHee]=useState('')
   return (
     <>
      <div>
@@ -49,7 +53,11 @@ function App() {
       <UseFormStatuss/>
       <UseTransitionDemo/>
       <Derived/>
-    </div>
+      </div>
+      <div>
+        <ChildOne setHee={setHee}/>
+        <ChildTwo hee={hee}/>
+      </div>
     </>
   )
 }
