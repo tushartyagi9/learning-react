@@ -20,6 +20,7 @@ import StyleComponents from './StyleComponents'
 import Bootstrapp from './Bootstrapp'
 import UseFormStatuss from './useFormStatuss'
 import UseTransitionDemo from './useTransitionDemo'
+import Derived from './Derived'
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
       This is my Userkey: {userkey}
       <UseFormStatuss/>
       <UseTransitionDemo/>
+      <Derived/>
     </div>
     </>
   )
