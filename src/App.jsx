@@ -25,13 +25,14 @@ import ChildOne from "./ChildOne";
 import ChildTwo from "./ChildTwo";
 import Object from './Object'
 import ArrayState from './ArrayState'
+import UseActionHook from './UseActionHook'
 
 
 function App() {
   const [hee,setHee]=useState('')
   return (
     <>
-     <div>
+     {/* <div>
       Tushar Tyagi
       <Fruit></Fruit>
       <Colors></Colors>
@@ -62,6 +63,9 @@ function App() {
       </div>
       <Object/>
       <ArrayState/>
+      <br/>
+      <hr/> */}
+      <UseActionHook/>
     </>
   )
 }
