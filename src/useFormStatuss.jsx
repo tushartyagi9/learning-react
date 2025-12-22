@@ -9,7 +9,7 @@ function UseFormStatuss() {
     }
 
     function CallForm() {
-        const { pending } = useFormStatus() 
+        const { pending } = useFormStatus()
         console.log({ pending })
 
         return (

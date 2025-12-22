@@ -26,6 +26,8 @@ import ChildTwo from "./ChildTwo";
 import Object from './Object'
 import ArrayState from './ArrayState'
 import UseActionHook from './UseActionHook'
+import Fragmentt from './Fragmentt'
+import CustomHook from './CustomHook'
 
 
 function App() {
@@ -66,6 +68,8 @@ function App() {
       <br/>
       <hr/> */}
       <UseActionHook/>
+      <Fragmentt/>
+      <CustomHook/>
     </>
   )
 }
