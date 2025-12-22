@@ -24,6 +24,7 @@ import Derived from './Derived'
 import ChildOne from "./ChildOne";
 import ChildTwo from "./ChildTwo";
 import Object from './Object'
+import ArrayState from './ArrayState'
 
 
 function App() {
@@ -60,6 +61,7 @@ function App() {
         <ChildTwo hee={hee}/>
       </div>
       <Object/>
+      <ArrayState/>
     </>
   )
 }
