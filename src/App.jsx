@@ -28,6 +28,7 @@ import ArrayState from './ArrayState'
 import UseActionHook from './UseActionHook'
 import Fragmentt from './Fragmentt'
 import CustomHook from './CustomHook'
+import ContextApi from './ContextApi'
 
 
 function App() {
@@ -67,9 +68,10 @@ function App() {
       <ArrayState/>
       <br/>
       <hr/> */}
-      <UseActionHook/>
-      <Fragmentt/>
-      <CustomHook/>
+    {/* <UseActionHook/>
+    <Fragmentt/>
+    <CustomHook/> */}
+      <ContextApi/>
     </>
   )
 }
