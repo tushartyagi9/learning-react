@@ -29,13 +29,15 @@ import UseActionHook from './UseActionHook'
 import Fragmentt from './Fragmentt'
 import CustomHook from './CustomHook'
 import ContextApi from './ContextApi'
+import ReactRouter from './ReactRouter'
+import Provider from './Provider'
 
 
 function App() {
   const [hee,setHee]=useState('')
   return (
     <>
-     {/* <div>
+     <div>
       Tushar Tyagi
       <Fruit></Fruit>
       <Colors></Colors>
@@ -67,11 +69,13 @@ function App() {
       <Object/>
       <ArrayState/>
       <br/>
-      <hr/> */}
-    {/* <UseActionHook/>
+      <hr/>
+    <UseActionHook/>
     <Fragmentt/>
-    <CustomHook/> */}
-      <ContextApi/>
+    <CustomHook/>
+       <ContextApi/>
+      <ReactRouter/>
+      <Provider/>
     </>
   )
 }
