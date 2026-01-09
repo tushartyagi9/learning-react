@@ -1,3 +1,28 @@
 body{
     color:purple
 }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+}
+
+.list li a{
+    text-decoration:none;
+}
+
+.header a{
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.list li{
+    display: flex;
+    padding-right: 10px;
+}
