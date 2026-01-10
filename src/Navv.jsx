@@ -14,6 +14,8 @@ function Navv() {
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/api">UsersData</Link></li>
         <li><Link to="/myapi">MyData</Link></li>
+        <li><Link to="/adduser">AddUser</Link></li>
+
 
       </ul>
     </div>

@@ -1,28 +1,52 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function MyApi(){
 
-    const [data,setData]=useState([]);
+    const [data, setData] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         getUserData();
-    },[])
+    }, []);
 
     async function getUserData(){
-        const url="http://localhost:3000/users";
-        let response=await fetch(url);
-        response=await response.json();
+        let response = await fetch("http://localhost:3000/users");
+        response = await response.json();
         setData(response);
     }
-    return <>
-    <h1>Json data is created by me..</h1>
-<ul>
-    {
-        data.map((item, index) => (
-            <li key={index}>{item.name}</li>
-        ))
-    }
-</ul>
 
-    </>
+    async function deleteData(id) {
+        await fetch(`http://localhost:3000/users/${id}`, {
+            method: "DELETE"
+        });
+
+        getUserData();
+    }
+
+    return (
+        <>
+            <h1>Json data is created by me..</h1>
+
+            <ul>
+                {data.map((item) => (
+                    <li
+                        key={item.id}
+                        style={{ border: "5px solid black", marginBottom: "10px", padding: "10px" }}
+                    >
+                        <p>Name: {item.name}</p>
+                        <p>Age: {item.age}</p>
+                        <p>Email: {item.email}</p>
+
+                        <button onClick={() => deleteData(item.id)}>
+                            Delete
+                        </button>
+
+                        <Link to={`/edit/${item.id}`}>
+                            <button>Edit</button>
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </>
+    );
 }

@@ -102,17 +102,25 @@ import { useEffect, useState } from "react"
 
 
 import { Routes, Route, Navigate } from "react-router-dom";
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 import Navv from "./Navv";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Api from "./API";
 import MyApi from "./MyApi";
+import AddUser from "./AddUser";
+import EditUser from "./EditUser";
+
 
 function App() {
   return (
     <>
       <Navv />
+      <ToastContainer />
+
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -120,6 +128,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/api" element={<Api/>} />
         <Route path="/myapi" element={<MyApi/>} />
+        <Route path="/adduser" element={<AddUser/>} />
+        <Route path="/edit/:id" element={<EditUser />} />
+
 
 
         {/* <Route path="/*" element={<h1>Page not found</h1>} /> */}
